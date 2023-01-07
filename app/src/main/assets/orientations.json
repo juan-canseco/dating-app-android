@@ -1,0 +1,42 @@
+[
+  {
+    "id" : 1,
+    "name": "Heterosexual"
+  },
+  {
+    "id": 2,
+    "name": "Homosexual"
+  },
+  {
+    "id": 3,
+    "name": "Lesbiana"
+  },
+  {
+    "id": 4,
+    "name": "Bisexual"
+  },
+  {
+    "id": 5,
+    "name": "Pansexual"
+  },
+  {
+    "id": 6,
+    "name": "Queer"
+  },
+  {
+    "id": 7,
+    "name": "Demisexual"
+  },
+  {
+    "id": 8,
+    "name": "Sapiosexual"
+  },
+  {
+    "id": 9,
+    "name": "Asexual"
+  },
+  {
+    "id": 10,
+    "name": "Cuestionándome"
+  }
+]

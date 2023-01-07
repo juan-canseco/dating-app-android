@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.org.datingapp.features.home.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_myFriendsFragment"
+            app:destination="@id/myFriendsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_profileFragment_to_preferencesFragment"
+            app:destination="@id/preferencesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_profileFragment_to_profileDetailsFragment"
+            app:destination="@id/profileDetailsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_signOutDialogFragment"
+            app:destination="@id/signOutDialogFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/myFriendsFragment"
+        android:name="com.org.datingapp.features.home.profile.friends.MyFriendsFragment"
+        android:label="fragment_my_friends"
+        tools:layout="@layout/fragment_my_friends" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_editProfilePhotosFragment"
+            app:destination="@id/editProfilePhotosFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editProfileNameFragment"
+            app:destination="@id/editProfileNameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editGenderFragment"
+            app:destination="@id/editGenderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editDescriptionFragment"
+            app:destination="@id/editDescriptionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editBirthDateFragment"
+            app:destination="@id/editBirthDateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_editProfileFragment_to_editInterestsFragment"
+            app:destination="@id/editInterestsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editActivitiesFragment"
+            app:destination="@id/editActivitiesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_editProfileFragment_to_editOrientationsFragment"
+            app:destination="@id/editOrientationsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.org.datingapp.features.home.profile.preferences.PreferencesFragment"
+        android:label="fragment_preferences"
+        tools:layout="@layout/fragment_preferences" >
+        <action
+            android:id="@+id/action_preferencesFragment_to_accountPreferencesFragment"
+            app:destination="@id/accountPreferencesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.org.datingapp.features.home.profile.deatils.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/accountPreferencesFragment"
+        android:name="com.org.datingapp.features.home.profile.preferences.account.AccountPreferencesFragment"
+        android:label="fragment_account_preferences"
+        tools:layout="@layout/fragment_account_preferences" />
+    <fragment
+        android:id="@+id/editProfilePhotosFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.photos.EditProfilePhotosFragment"
+        android:label="fragment_edit_profile_photos"
+        tools:layout="@layout/fragment_edit_profile_photos" >
+        <action
+            android:id="@+id/action_editProfilePhotosFragment_to_photosBottomSheetDialogFragment2"
+            app:destination="@id/photosBottomSheetDialogFragment2" />
+        <action
+            android:id="@+id/action_editProfilePhotosFragment_to_uploadPhotoDialogFragment2"
+            app:destination="@id/uploadPhotoDialogFragment2" />
+        <action
+            android:id="@+id/action_editProfilePhotosFragment_to_removePhotoDialogFragment"
+            app:destination="@id/removePhotoDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileNameFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.name.EditNameFragment"
+        android:label="EditProfileNameFragment"
+        tools:layout="@layout/fragment_edit_name"
+        />
+    <fragment
+        android:id="@+id/editGenderFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.gender.EditGenderFragment"
+        android:label="fragment_edit_gender"
+        tools:layout="@layout/fragment_edit_gender" />
+    <fragment
+        android:id="@+id/editDescriptionFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.description.EditDescriptionFragment"
+        android:label="EditDescriptionFragment"
+        tools:layout="@layout/fragment_edit_description"
+        />
+    <fragment
+        android:id="@+id/editBirthDateFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.birthdate.EditBirthDateFragment"
+        android:label="fragment_edit_birth_date"
+        tools:layout="@layout/fragment_edit_birth_date" />
+    <dialog
+        android:id="@+id/photosBottomSheetDialogFragment2"
+        android:name="com.org.datingapp.features.home.profile.edit.photos.PhotosBottomSheetDialogFragment"
+        android:label="PhotosBottomSheetDialogFragment"
+        tools:layout="@layout/fragment_photos_bottom_sheet_dialog"
+        >
+        <argument
+            android:name="photoPosition"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="localPhotoUri"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/uploadPhotoDialogFragment2"
+        android:name="com.org.datingapp.features.home.profile.edit.photos.UploadPhotoDialogFragment"
+        android:label="UploadPhotoDialogFragment"
+        tools:layout="@layout/fragment_upload_photo_dialog"
+        />
+    <fragment
+        android:id="@+id/editInterestsFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.interests.EditInterestsFragment"
+        android:label="fragment_edit_interests"
+        tools:layout="@layout/fragment_edit_interests" />
+    <fragment
+        android:id="@+id/editActivitiesFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.activities.EditActivitiesFragment"
+        android:label="fragment_edit_activities"
+        tools:layout="@layout/fragment_edit_activities" />
+    <fragment
+        android:id="@+id/editOrientationsFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.orientations.EditOrientationsFragment"
+        android:label="fragment_edit_orientations"
+        tools:layout="@layout/fragment_edit_orientations" />
+    <dialog
+        android:id="@+id/removePhotoDialogFragment"
+        android:name="com.org.datingapp.features.home.profile.edit.photos.RemovePhotoDialogFragment"
+        android:label="fragment_delete_photo_dialog"
+        tools:layout="@layout/fragment_delete_photo_dialog" />
+    <dialog
+        android:id="@+id/signOutDialogFragment"
+        android:name="com.org.datingapp.features.auth.signout.SignOutDialogFragment"
+        android:label="SignOutDialogFragment"
+        tools:layout="@layout/fragment_sign_out_dialog"/>
+</navigation>

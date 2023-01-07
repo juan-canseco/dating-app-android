@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genres">
+        <item>Mujer</item>
+        <item>Hombre</item>
+        <item>Mujer transgénero</item>
+        <item>Hombre transgénero</item>
+        <item>No Binario</item>
+    </string-array>
+</resources>

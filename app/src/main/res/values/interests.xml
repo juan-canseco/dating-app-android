@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interests">
+        <item>CINE 🎬</item>
+        <item>VIDEOJUEGOS 🎮</item>
+        <item>LIBROS 📚</item>
+        <item>BAILE 🕺🏻</item>
+        <item>COMICS 🦸</item>
+        <item>MASCOTAS 😺</item>
+        <item>COCINA 🧑‍🍳</item>
+        <item>CULTURA 🎎</item>
+        <item>ARTE 🎭</item>
+        <item>RADIO 🎙️</item>
+        <item>GYM 🏋🏻‍♂</item>️
+        <item>TECNOLOGÍA 💻</item>
+        <item>CIENCIA 🔬</item>
+        <item>SALUD Y MEDICINA 🧬</item>
+        <item>BELLEZA Y ESTILO 😎</item>
+    </string-array>
+</resources>

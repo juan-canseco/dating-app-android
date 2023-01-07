@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.5'
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    core_version = '1.9.0'
+    appcompat_version = '1.5.1'
+    annotation_version = '1.5.0'
+    legacy_support_4_version = '1.0.0'
+    gms_auth_version = '20.4.0'
+    gms_location_version = '21.0.1'
+    material_version = '1.7.0'
+    constraint_version = '2.1.4'
+    coroutines_version = '1.6.2'
+    firestore_version = '24.4.0'
+    firestorage_version = '20.1.0'
+    firebaseauth_version = '21.1.0'
+    firebase_crashlytics_version = '18.3.1'
+    firebase_analytics_version = '21.2.0'
+    firebase_coroutines_version = '1.5.0'
+    fragment_version = '1.5.4'
+    lifecycle_version = '2.5.1'
+    nav_version = '2.5.3'
+    worker_version = '2.7.1'
+    jodatime_version = '2.10.12.2'
+    hilt_version = '2.40.5'
+    hilt_android_compiler_version = '2.40.5'
+    hilt_compiler_version = '1.0.0'
+    hilt_fragment_version = '1.0.0'
+    hilt_worker_version = '1.0.0'
+    progress_button_version = '2.1.0'
+    gson_version = '2.9.1'
+    easy_permissions_version = '1.0.0'
+    image_picker = '2.1'
+    glide_version = '4.14.2'
+    paging_version = "3.1.1"
+
+}

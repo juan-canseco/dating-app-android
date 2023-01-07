@@ -1,0 +1,202 @@
+<resources>
+
+    <string name="app_name">Dating App</string>
+    <string name="app_title">Dating App</string>
+    <string name="app_name_lower">Dating App</string>
+
+    <!-- Common -->
+    <string name="action_uploading">Subiendo</string>
+    <string name="action_of">de</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_done">Listo</string>
+    <string name="action_delete_profile">Borrar cuenta</string>
+    <string name="action_sign_out">Cerrar sesión</string>
+    <string name="action_next">Siguiente</string>
+    <string name="action_sign_in">INICIAR</string>
+    <string name="action_sign_in_lowercase">Iniciar</string>
+    <string name="action_sign_in_long">Iniciar sesión</string>
+    <string name="action_select">Seleccionar</string>
+    <string name="label_photos">fotos</string>
+    <string name="label_sign_in_with_google">Iniciar con Google</string>
+    <string name="label_sign_in_with_phone_number">Iniciar con Número de teléfono</string>
+    <string name="label_sign_in_with_email">Iniciar con Email</string>
+
+    <string name="action_facebook_sign_in">FACEBOOK</string>
+    <string name="action_google_sign_in">GOOGLE</string>
+    <string name="helper_or"> O </string>
+    <string name="action_omit">OMITIR</string>
+    <string name="failure_sms_sign_in">Numero de teléfono invalido</string>
+    <string name="failure_sign_in_too_many_requests">Hemos bloqueado todas las solicitudes de este dispositivo debido a una actividad inusual, intenten iniciar sesión de nuevo más tarde.</string>
+    <string name="failure_network_connection">Error : No hay conexión de red.</string>
+    <string name="failure_server_error">Error de servidor</string>
+
+    <string name="failure_server_error_retry">Algo ha ido mal \nPor favor inténtalo otra vez</string>
+
+    <!-- Sign In  -->
+    <string name="label_sign_in_do_you_have_account">¿No tienes cuenta aún?</string>
+    <string name="label_sign_in_register">Regístrate</string>
+    <string name="failure_sign_in_wrong_credentials">Email u/o contraseña incorrectos.</string>
+
+    <!-- Sign Up -->
+    <string name="label_sign_up_register">Regístrate</string>
+    <string name="prompt_sign_up_email_hint">Email</string>
+    <string name="prompt_sign_up_password_hint">Contraseña</string>
+    <string name="prompt_sign_up_password_confirmation_hint">Confirmación de contraseña</string>
+    <string name="failure_sign_up_email_required">Error: Email requerido.</string>
+    <string name="failure_sign_up_email_already_in_use">El email ya esta en uso por favor usa otro.</string>
+    <string name="failure_sign_up_invalid_email">El correo electrónico debe poseer de 10 a 75 caracteres de longitud además de tener un formato valido como los siguientes: johndoe@domain.com, jonh_doe@domain.com, john.doe@domain.com.</string>
+    <string name="failure_sign_up_invalid_password">La contraseña debe de poseer de 5 a 30 caracteres de longitud.</string>
+    <string name="failure_sign_up_password_required">Error: Contraseña requerida.</string>
+    <string name="failure_sign_up_invalid_password_confirmation">La contraseña y su confirmación no coinciden.</string>
+    <string name="failure_sign_up_password_confirmation_required">Error: La confirmación de la contraseña es requerida.</string>
+
+    <!-- OnBoarding -->
+    <string name="prompt_on_boarding_full_name_hint">Nombre</string>
+    <string name="failure_on_boarding_full_name_required">Error: Nombre requerido.</string>
+    <string name="failure_on_boarding_full_name_min_char">Error: El nombre debe contener al menos 2 caracteres.</string>
+    <string name="failure_on_boarding_invalid_full_name">Error: Nombre invalido.</string>
+
+    <string name="label_on_boarding_name">Yo Soy</string>
+
+    <string name="label_on_boarding_birth_date">Mi edad es </string>
+    <string name="label_on_boarding_birth_date_i_have">Yo tengo</string>
+    <string name="label_on_boarding_birth_date_advice">Tu edad será pública</string>
+    <string name="label_on_boarding_birth_date_warning">Debes tener al menos 18 años para poder usar Dating App.</string>
+
+    <string name="label_on_boarding_gender">Me identifico como</string>
+
+    <string name="label_on_boarding_username">Mi nombre de usuario es </string>
+    <string name="prompt_on_boarding_username_hint">Usuario</string>
+    <string name="failure_on_boarding_invalid_username">Error: Usuario invalido.</string>
+    <string name="failure_on_boarding_username_required">Error: Usuario requerido.</string>
+    <string name="helper_on_boarding_username">• Solo se permiten letras, números y guion bajo \n• Debe iniciar con una letra \n• Debe terminar con una letra o un numero \n• Mínimo 5 caracteres</string>
+
+
+    <string name="label_on_boarding_description">Escribe tu bio, preséntate</string>
+    <string name="failure_on_boarding_description_required">Error: Descripción requerida.</string>
+    <string name="failure_on_boarding_invalid_description">Error: La descripción de tener al menos 1 caracter.</string>
+    <string name="prompt_on_boarding_description_hint">Descripción</string>
+
+    <string name="label_on_boarding_photos">Añadir fotos</string>
+    <string name="label_on_boarding_photos_description">Añade al menos 1 foto para continuar.</string>
+    <string name="label_on_boarding_photos_uploading">Subiendo foto</string>
+    <string name="label_on_boarding_photos_uploading_description">Sube una buena foto, una sonrisa vale mas que mil palabras</string>
+
+
+    <string name="label_on_boarding_interests">Añadir Intereses</string>
+    <string name="label_on_boarding_interests_description">Añade al menos 5 intereses para continuar.</string>
+
+
+    <string name="label_on_boarding_activities">Añadir Actividades</string>
+    <string name="label_on_boarding_activities_description">Añade al menos 3 actividades para continuar.</string>
+
+    <!-- Finish -->
+
+    <string name="label_uploading_photos">Subiendo fotos</string>
+    <string name="label_successful_upload">Subida exitosa</string>
+    <string name="failure">Error</string>
+
+    <!-- Main -->
+    <string name="chats_title">Mensajes</string>
+    <string name="chats_title_uppercase">CHATS</string>
+    <string name="explore_title">Explorar</string>
+    <string name="profiles_explore_uppercase">EXPLORAR</string>
+    <string name="matches_title">Matches</string>
+    <string name="matches_title_uppercase">MATCHES</string>
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_title_uppercase">MI PERFIL</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Buscar</string>
+    <string name="content_description_search">Search Chat by Username</string>
+    <string name="more">More</string>
+    <string name="content_description_more">More Options</string>
+    <string name="filter">Filter</string>
+    <string name="content_description_filter">Explore filters</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="content_description_edit_profile">Edit Profile Content Description</string>
+    <string name="sign_in_phone_number_label">Mi número es </string>
+
+
+    <string name="label_enable_location">Activar la Geolocalización</string>
+    <string name="description_enable_location">Necesitas activar la geolocalización para poder usar Dating App</string>
+    <string name="action_allow_location">Permitir Geolocalización</string>
+
+    <string name="sign_in_phone_number_description">"Usa el número de teléfono para registrarte o para iniciar sesión "</string>
+    <string name="button_phone_text">Phone</string>
+    <string name="label_on_boarding_finish">Estamos configurando tu perfil, porfavor espera un poco</string>
+    <string name="failure_no_internet">Sin conexión </string>
+    <string name="label_no_network">No estas conectado a internet, por favor conéctate a internet para continuar.</string>
+    <string name="failure_error">Error!</string>
+    <string name="action_retry">Reintentar</string>
+    <string name="action_sign_in_google_account">Iniciar sesión con una cuenta de Google.</string>
+    <string name="label_sms_sign_in_code">"Mi código es "</string>
+    <string name="failure_sms_sign_in_invalid_code">"Código invalido "</string>
+    <string name="label_profile_description">"Descripción "</string>
+    <string name="label_profile_interests">Gustos</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="action_edit_photos">Editar fotos</string>
+    <string name="action_go_to_settings">Ir a configuración</string>
+    <string name="label_permission_denied">"Permiso denegado "</string>
+    <string name="location_permission_denied_description_label">Para poder utilizar la función de encuentros en Dating App es necesario habilitar los permisos de locación en configuraciones.</string>
+
+    <string name="permissions_required_title">Permisos requeridos</string>
+    <string name="permission_required_title">Permiso requerido</string>
+    <string name="rationale_permissions_negative_button">AHORA NO</string>
+
+    <string name="request_permission_rationale_positive">Continuar</string>
+    <string name="request_permission_rationale_negative">Cancelar</string>
+
+    <string name="rationale_permissions_positive_button">IR A CONFIGURACION</string>
+    <string name="request_media_permissions_rationale">Para capturar fotos, permítele a Dating App acceder a tu cámara, fotos, archivos de tu dispositivo.</string>
+    <string name="denied_media_permissions_rationale">Para capturar fotos, permítele a Dating App acceder a tu cámara, fotos, archivos de tu dispositivo.\n Tap en Configuración > Permisos, y habilita los permisos de Almacenamiento, Cámara.</string>
+    <string name="denied_media_permissions_rationale_33_plus">Para capturar fotos, permítele a Dating App acceder a tu cámara, fotos, archivos de tu dispositivo.\n Tap en Configuración > Permisos, y habilita los permisos de Fotos y Videos, Cámara.</string>
+
+    <string name="request_location_permission_rationale">Para poder encontrar usuarios cercanos a tu Ubicación, permítele a Dating App acceder a tu localización.</string>
+    <string name="denied_location_permission_rationale">Para poder encontrar usuarios cercanos a tu Ubicación, permítele a Dating App acceder a tu localización.\n Tap en Configuración > Permisos, y habilita el permiso de Localización.</string>
+
+    <string name="action_delete">Eliminar</string>
+    <string name="action_add">Agregar</string>
+    <string name="label_on_boarding_phone">Mi WhatsApp es</string>
+    <string name="prompt_on_boarding_phone_hint">Numero de WhatsApp</string>
+    <string name="description_label">Descripción</string>
+    <string name="pleasures_label">Gustos</string>
+    <string name="tap_to_view_profile_label">Tap para ver perfil</string>
+    <string name="friends_label">Amigos</string>
+    <string name="my_friends_title">Mis Amigos</string>
+    <string name="edit_profile_title">Edita tu perfil</string>
+    <string name="preferences_title">Preferencias</string>
+    <string name="account_settings">Configuracion de la cuenta</string>
+    <string name="blocked_user_settings">Usuarios bloqueados</string>
+    <string name="privacy_policy_settings">Política de privacidad</string>
+    <string name="service_terms_settings">Términos de servicio</string>
+    <string name="change_email_settings">Cambiar dirección de correo electrónico</string>
+    <string name="change_password_settings">Cambiar la contraseña</string>
+    <string name="change_username_settings">Cambiar usuario</string>
+    <string name="label_name">Nombre</string>
+    <string name="label_description">Descripción</string>
+    <string name="label_interests">Intereses</string>
+    <string name="label_activities">Actividades</string>
+    <string name="label_basic_info">Información básica</string>
+    <string name="label_gender">Género</string>
+    <string name="label_birthdate">Cumpleaños</string>
+    <string name="label_about_me_info">Sobre mí</string>
+    <string name="edit_description">Edita tu descripción</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_edit_name">Editar Nombre</string>
+    <string name="action_edit_gender">Editar Genero</string>
+    <string name="action_edit_description">Editar Descripcion</string>
+    <string name="action_edit_birthdate">Editar Cumpleaños</string>
+    <string name="label_on_boarding_orientation">Mi orientacion sexual es</string>
+    <string name="label_on_boarding_orientation_description">Selecciona hasta 3 orientaciones para continuar</string>
+    <string name="action_edit_interests">Editar Intereses</string>
+    <string name="action_edit_activities">Editar Actividades</string>
+    <string name="action_edit_orientations">Editar Orientación</string>
+    <string name="label_orientation">Orientación</string>
+    <string name="label_photo_delete">Eliminando Foto</string>
+    <string name="label_username">Usuario</string>
+    <string name="label_interests_in_common">Intereses en común</string>
+    <string name="label_activities_in_common">Actividades en común</string>
+</resources>

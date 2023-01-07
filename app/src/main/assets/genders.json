@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Mujer"
+  },
+  {
+    "id": 2,
+    "name": "Hombre"
+  },
+  {
+    "id": 3,
+    "name": "Mujer transgénero"
+  },
+  {
+    "id": 4,
+    "name": "Hombre transgénero"
+  },
+  {
+    "id": 5,
+    "name": "Andrógino"
+  },
+  {
+    "id" : 6,
+    "name" : "Genero fluido"
+  },
+  {
+    "id": 7,
+    "name" : "Bigenero"
+  },
+  {
+    "id": 8,
+    "name": "No-binario"
+  },
+  {
+    "id": 9,
+    "name": "No-conforme"
+  }
+]

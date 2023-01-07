@@ -1,0 +1,38 @@
+[
+  {
+    "id": "b611fe6f-b6ec-4d84-8c39-1e6b01ebeb2d",
+    "name": "Salir al Cine"
+  },
+  {
+    "id": "c63e57d3-8356-437b-96a5-e018926cd44d",
+    "name": "Charlar"
+  },
+  {
+    "id": "e58a4553-a6ec-4bb1-91bc-099ead053657",
+    "name": "Salir a Bailar"
+  },
+  {
+    "id": "123cf250-383a-4d76-a40e-d563b528b263",
+    "name": "Practicar Deportes"
+  },
+  {
+    "id": "e384b308-c3f7-495b-90b0-81a2070771de",
+    "name": "Pasear al aire libre"
+  },
+  {
+    "id": "e9c33008-339e-4f00-997d-8e26a88eaae2",
+    "name": "Ir por un Café"
+  },
+  {
+    "id": "a295193c-9b41-499d-90d4-0e993be1cea3",
+    "name": "Salir de Picnic"
+  },
+  {
+    "id": "801ca272-a79a-4eca-bcbf-7b472b26b5cb",
+    "name": "Salir a Patinar"
+  },
+  {
+    "id": "dbd59ad3-1e74-4ccf-8a98-61e556e13760",
+    "name": "Ir a las maquinitas"
+  }
+]

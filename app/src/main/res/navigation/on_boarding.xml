@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_boarding"
+    app:startDestination="@id/nameFragment">
+
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.org.datingapp.features.onboarding.name.NameFragment"
+        android:label="NameFragment"
+        tools:layout="@layout/fragment_name"
+        >
+        <action
+            android:id="@+id/action_nameFragment_to_birthDateFragment"
+            app:destination="@id/birthDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthDateFragment"
+        android:name="com.org.datingapp.features.onboarding.birthdate.BirthDateFragment"
+        android:label="fragment_birth_date"
+        tools:layout="@layout/fragment_birth_date" >
+        <action
+            android:id="@+id/action_birthDateFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.org.datingapp.features.onboarding.gender.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_orientationFragment"
+            app:destination="@id/orientationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usernameFragment"
+        android:name="com.org.datingapp.features.onboarding.username.UsernameFragment"
+        android:label="UsernameFragment"
+        tools:layout="@layout/fragment_username"
+        >
+        <action
+            android:id="@+id/action_usernameFragment_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.org.datingapp.features.onboarding.description.DescriptionFragment"
+        android:label="DescriptionFragment"
+        tools:layout="@layout/fragment_description"
+        >
+        <action
+            android:id="@+id/action_descriptionFragment_to_interestsFragment"
+            app:destination="@id/interestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestsFragment"
+        android:name="com.org.datingapp.features.onboarding.interests.InterestsFragment"
+        android:label="fragment_interests"
+        tools:layout="@layout/fragment_interests" >
+        <action
+            android:id="@+id/action_interestsFragment_to_activitiesFragment"
+            app:destination="@id/activitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.org.datingapp.features.onboarding.photos.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" >
+        <action
+            android:id="@+id/action_photosFragment_to_photosBottomSheetDialogFragment"
+            app:destination="@id/photosBottomSheetDialogFragment" />
+        <action
+            android:id="@+id/action_photosFragment_to_uploadPhotoDialogFragment"
+            app:destination="@id/uploadPhotoDialogFragment" />
+        <action
+            android:id="@+id/action_photosFragment_to_locationFragment"
+            app:destination="@id/locationFragment"
+            app:popUpTo="@id/nameFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <dialog
+        android:id="@+id/photosBottomSheetDialogFragment"
+        android:name="com.org.datingapp.features.onboarding.photos.PhotosBottomSheetDialogFragment"
+        android:label="fragment_photos_bottom_sheet_dialog"
+        tools:layout="@layout/fragment_photos_bottom_sheet_dialog" >
+        <argument
+            android:name="photoPosition"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="localPhotoUri"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/uploadPhotoDialogFragment"
+        android:name="com.org.datingapp.features.onboarding.photos.UploadPhotoDialogFragment"
+        android:label="fragment_upload_photo_dialog"
+        tools:layout="@layout/fragment_upload_photo_dialog" />
+
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.org.datingapp.features.onboarding.finish.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+
+
+        <action
+            android:id="@+id/action_finishFragment_to_retryNetworkErrorDialogFragment"
+            app:destination="@id/retryNetworkErrorDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/retryNetworkErrorDialogFragment"
+        android:name="com.org.datingapp.features.onboarding.finish.RetryNetworkErrorDialogFragment"
+        android:label="fragment_retry_network_error_dialog"
+        tools:layout="@layout/fragment_retry_network_error_dialog" />
+
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.org.datingapp.features.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/locationFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/activitiesFragment"
+        android:name="com.org.datingapp.features.onboarding.activities.ActivitiesFragment"
+        android:label="fragment_activites"
+        tools:layout="@layout/fragment_activites" >
+        <action
+            android:id="@+id/action_activitiesFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orientationFragment"
+        android:name="com.org.datingapp.features.onboarding.orientation.OrientationFragment"
+        android:label="fragment_orientation"
+        tools:layout="@layout/fragment_orientation" >
+        <action
+            android:id="@+id/action_orientationFragment_to_usernameFragment"
+            app:destination="@id/usernameFragment" />
+    </fragment>
+
+</navigation>

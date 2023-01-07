@@ -1,0 +1,124 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.org.datingapp"
+        minSdk 23
+        targetSdk 33
+        versionCode 2
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+
+    implementation "androidx.core:core-ktx:$core_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // firebase
+    implementation "com.google.firebase:firebase-firestore-ktx:$firestore_version"
+    implementation "com.google.firebase:firebase-storage-ktx:$firestorage_version"
+    implementation "com.google.firebase:firebase-auth-ktx:$firebaseauth_version"
+    implementation "com.google.firebase:firebase-crashlytics-ktx:$firebase_crashlytics_version"
+    implementation "com.google.firebase:firebase-analytics-ktx:$firebase_analytics_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$firebase_coroutines_version"
+
+
+    // Architecture components and jetpack
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.work:work-runtime-ktx:$worker_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+
+    // DI
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_android_compiler_version"
+    kapt("androidx.hilt:hilt-compiler:$hilt_compiler_version")
+    implementation "androidx.hilt:hilt-navigation-fragment:$hilt_fragment_version"
+    implementation "androidx.hilt:hilt-work:$hilt_worker_version"
+
+    implementation "androidx.annotation:annotation:$annotation_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_4_version"
+
+    implementation "com.google.android.gms:play-services-auth:$gms_auth_version"
+    implementation "com.google.android.gms:play-services-location:$gms_location_version"
+
+
+    // UI
+    implementation "com.github.razir.progressbutton:progressbutton:$progress_button_version"
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    implementation 'com.hbb20:ccp:2.5.1'
+
+    // Utils
+    implementation "net.danlew:android.joda:$jodatime_version"
+    implementation "com.google.code.gson:gson:$gson_version"
+    implementation  "com.vmadalin:easypermissions-ktx:$easy_permissions_version"
+
+    // Image Picker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+
+
+    // Carousel Slider
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
+
+    // Shimmer effect
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    // testing
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:4.0.0'
+    testImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'org.robolectric:robolectric:4.8'
+    testImplementation "io.mockk:mockk:1.10.0"
+    testImplementation "org.amshove.kluent:kluent:1.14"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+}
