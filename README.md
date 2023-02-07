@@ -1,7 +1,9 @@
 # Dating App (WORK IN PROGRESS)
 
-Dating app like tinder with more than 25+ designed and fully functional screens.
 ![alt text](https://media.giphy.com/media/BZ6hQFxkwQ08QxfmiE/giphy.gif)
+
+Dating app like tinder with more than 25+ designed and fully functional screens.
+
 
 ## Features 
 - Authentication (Email)
